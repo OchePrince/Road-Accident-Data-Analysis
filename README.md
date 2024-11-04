@@ -145,12 +145,37 @@ The EDA phase focused on examining the Road Accident dataset to identify pattern
 
 - **OutPut**:
 
-   ![Roadtype accident](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/Roadtype%20accident.png)
+   ![Roadtype accident](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/Roadtype.png)
 
-- **Key Findings**:
-      1. Single carriageway road type has the highest recorded accident for all the Accident Severity.
-      2. Roundabout road type has 
-  
+- **Key Findings**
+1. **Single Carriageway Dominance**:
+   - *Slight Accidents*: The majority of slight accidents occur on single carriageways (195,185), indicating high accident frequency but generally low severity.
+   - *Serious and Fatal Accidents*: Single carriageways also have the highest counts for serious (32,444) and fatal accidents (2,982), suggesting they are high-risk areas for both high-frequency and high-severity accidents.
+2. **Dual Carriageway Accidents**: Dual carriageways have a significant number of slight (39,314) and serious (5,331) accidents. However, they have fewer fatalities (822) compared to single carriageways. Dual carriageways might benefit from safety measures aimed at reducing serious accidents, potentially focusing on speed regulation or barrier enhancements.
+3. **Roundabouts and One-Way Streets**:    
+   - *Slight Accidents*: Roundabouts and one-way streets primarily see slight accidents (19,070 and 5,402, respectively), possibly due to lower speeds but complex maneuvering.
+   - *Serious and Fatal Accidents*: Roundabouts report fewer serious (1,782) and fatal (77) incidents, and one-way streets show similarly low fatality counts.
+   - Roundabouts and one-way streets are relatively safer, but adjustments such as clearer signage or optimized traffic flow might reduce the likelihood of serious accidents.
+4. Slip Roads: Slip roads show minimal accidents overall, but fatalities do occur occasionally (14 fatalities). This might indicate the need for better marking, lighting, or merging control in these areas.
+
+5. **Missing data(NA)**: Records marked "NA" for road type appear across all severity levels but in small numbers. Investigating this missing data could clarify if these cases share any common characteristics.
+
+- **Recommendations**:
+   - Single Carriageways: Improve visibility, enforce speed limits, and consider additional road safety features, such as warning signs or rumble strips, particularly in high-traffic zones.
+   - Dual Carriageways: Review serious accident sites for potential infrastructure improvements, such as barriers or increased law enforcement presence.
+   - Roundabouts: Regular maintenance and visibility improvements could reduce the already low but existent rate of serious and fatal accidents.
+
+### Environmental Conditions on Road Accident
+- **Accidents by Weather and Light Conditions**:
+   - **Goal**: To find out which weather condition has the most accident record and give recommendations to reduce the amount of accident rate.
+   - **SQL CODE**:
+      ```SQL
+              -- Accidents by Weather and Light Conditions
+        SELECT Weather_Conditions, Light_Conditions, COUNT(*) AS Total_Accident
+        FROM road_accident_data
+        GROUP BY Weather_Conditions, Light_Conditions
+        ORDER BY  Weather_Conditions, Light_Conditions;
+          
 
 
 
