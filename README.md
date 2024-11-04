@@ -119,6 +119,31 @@ The EDA phase focused on examining the Road Accident dataset to identify pattern
     FROM road_accident_data
     GROUP BY Light_Conditions; 
 
+- **Output**:
+
+  ![Accident_severity](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/Accident_severity%20count.png)
+
+  ![light_conditions](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/light_conditions.png)
+
+- **Key Findings**:
+    1. **Severity Distribution**: Slight accidents make up the majority of cases, followed by serious and fatal accidents.
+    2. **Light Conditions**: The data shows that majority of accident occur during the day than night, this could be, because during the day the road is always busya and less busy at night.
+
+### Bivariate Analysis
+**Goal**: To examine relationships between pairs of variables.
+- **Accident Severity by Road Type**:  Analyzed how different road types are associated with accident severity levels.
+- **SQL CODE**:
+     ```SQL
+                  -- Total accident and casualties by Road Type
+        SELECT 
+            Road_Type,
+            Accident_Severity,
+            COUNT(*) AS Total_Accdent
+        FROM road_accident_data
+        GROUP BY Road_Type, Accident_Severity
+        ORDER BY 2 DESC;
+
+
 
 
 
