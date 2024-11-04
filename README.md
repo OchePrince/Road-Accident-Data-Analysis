@@ -44,6 +44,57 @@ The primary objectives of the Road Accident Data Analysis project are as follows
 
 ---
 
+## Methodology
+- **Data Cleaning**:
+    - Microsoft Excel and MySQL was used to clean the data, where duplicates were removed using Excel and filling blank cells with **'NA'**.
+    - MySQL was used to combine some column field which are similar and have same meaning for Light Conditions and Road Surface Conditions. Below is the SQL code used to make changes to the data;
+  ```SQL
+      -- Data Cleaning
+    SELECT DISTINCT Road_Surface_Conditions
+    FROM road_accident_data;
+    
+    UPDATE road_accident_data
+    SET Road_Surface_Conditions = 'Snow/ice'
+    WHERE Road_Surface_Conditions IN ('Frost or ice', 'Snow');
+    
+    UPDATE road_accident_data
+    SET Road_Surface_Conditions = 'Wet'
+    WHERE Road_Surface_Conditions IN ('Flood over 3cm. deep', 'Wet or damp');
+    
+    SELECT DISTINCT Light_Conditions
+    FROM road_accident_data;
+    
+    UPDATE road_accident_data
+    SET Light_Conditions = 'Night'
+    WHERE Light_Conditions IN ('Darkness - lights lit', 'Darkness - lighting', 'Darkness - lights unlit', 'Darkness - no lighting');
+
+- **Exploratory Analysis**: MySQL and Excel was used to perform analysis on the data to find insights and give Data-driven solutions.
+
+- **Visualization**: Excel was used to create an Interesting and Interactive Dashboard.
+---
+
+## Exploratory Data Analysis
+The EDA phase focused on examining the Road Accident dataset to identify patterns, relationships, and anomalies. Each step aimed to answer specific questions outlined in the project objectives. The EDA include a combination of summary statistics, data visualizations, and SQL queries to reveal insights into accident trends and contributing factors.
+### Data Overview
+- **Goal**: To understand the basic structure of the data and check for any immediate issues.
+- **Analytical Approach**:
+    - Calculated the total number of accidents and reviewed the count of unique entries in key columns (e.g., Accident_index).
+    - Generated summary statistics for numerical columns like Number_of_Casualties, Number_of_Vehicles, and Speed_limit.
+- **SQL CODE**:
+   ```SQL
+       -- Count total records and check unique accident indices
+    SELECT COUNT(*) AS Total_Records, COUNT(DISTINCT Accident_index) AS Unique_Accidents
+    FROM road_accident_data;
+    
+    -- Summary statistics for key numerical columns
+    SELECT AVG(Number_of_Casualties) AS Avg_Casualties, 
+           AVG(Number_of_Vehicles) AS Avg_Vehicles,
+           AVG(Speed_limit) AS Avg_Speed_Limit
+    FROM road_accident_data;
+
+
+    
+  
 
 
 
