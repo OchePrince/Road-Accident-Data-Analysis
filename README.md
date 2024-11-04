@@ -143,6 +143,15 @@ The EDA phase focused on examining the Road Accident dataset to identify pattern
         GROUP BY Road_Type, Accident_Severity
         ORDER BY 2 DESC;
 
+- **OutPut**:
+
+   ![Roadtype accident](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/Roadtype%20accident.png)
+
+- **Key Findings**:
+      1. Single carriageway road type has the highest recorded accident for all the Accident Severity.
+      2. Roundabout road type has 
+  
+
 
 
 
