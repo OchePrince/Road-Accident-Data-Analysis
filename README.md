@@ -78,7 +78,7 @@ The EDA phase focused on examining the Road Accident dataset to identify pattern
 ### Data Overview
 - **Goal**: To understand the basic structure of the data and check for any immediate issues.
 - **Analytical Approach**:
-    - Calculated the total number of accidents and reviewed the count of unique entries in key columns (e.g., Accident_index).
+    - Calculated the total number of accidents and reviewed the count of unique entries in key columns Accident_index.
     - Generated summary statistics for numerical columns like Number_of_Casualties, Number_of_Vehicles, and Speed_limit.
 - **SQL CODE**:
    ```SQL
@@ -94,9 +94,31 @@ The EDA phase focused on examining the Road Accident dataset to identify pattern
 
 - **Output**:
 
-  ![unique index](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/unique index.png)
+  ![unique index](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/unique%20index.png)
 
   ![descriptive_sta](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/descriptive_sta.png)
+
+### Univariate Analysis
+- **Goal**: To examine individual variables to understand their distribution and frequency.
+- **Analytical Approach**:
+    - **Accident_Severity**: Understanding the proportion of accidents and total casualties classified as Fatal, Serious, or Slight.
+    - **Light_Conditions**: Identifying the total accident and casualties under Day vs. Night conditions.
+- **SQL CODE**:
+   ```SQL
+        -- Accident Severity Insight
+    SELECT 
+    	Accident_Severity, 
+        COUNT(*) AS Total_Accident,
+        SUM(Number_of_Casualties) AS Total_casualties
+    FROM road_accident_data
+    GROUP BY Accident_Severity
+    ORDER BY Total_Accident DESC;
+    
+    -- Accident distribution and Casualties by light conditions
+    SELECT Light_Conditions, COUNT(*) AS Accident_Count, SUM(Number_of_Casualties) AS Total_casualties
+    FROM road_accident_data
+    GROUP BY Light_Conditions; 
+
 
 
 
