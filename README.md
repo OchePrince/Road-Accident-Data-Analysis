@@ -92,6 +92,13 @@ The EDA phase focused on examining the Road Accident dataset to identify pattern
            AVG(Speed_limit) AS Avg_Speed_Limit
     FROM road_accident_data;
 
+- **Output**:
+
+  ![unique index](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/unique index.png)
+
+  ![descriptive_sta](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/descriptive_sta.png)
+
+
 
     
   
