@@ -252,7 +252,38 @@ The EDA phase focused on examining the Road Accident dataset to identify pattern
 
     - **Output**:
 
-       ![day_of_the_week accident](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/day_of_the_week accident.png)
+       ![day_of_the_week accident](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/day_of_the_week%20accident.png)
+
+       ![day of the week](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/day%20of%20the%20week.png)
+
+      - **Key Findings**:
+         - Friday has the highest accident count with 50,529 incident and total casualties of 68,294, followed by Wednesday. Accident rates appear to increase toward the end of the workweek, particularly from midweek onward
+         - The data shows that Friday has the highest count of Slight accidents and Serious accidents, while Sunday has the highest Fatal accident. This may suggest that some drivers adopt riskier behaviors, such as speeding or driving under the influence, on weekends.
+
+         These insights could guide targeted interventions, such as heightened traffic enforcement on Fridays and weekends to mitigate the risk of severe accidents.
+
+      - **Recoommendations**:
+         - Given the high number of accidents on Fridays and the elevated fatal accidents on Sundays, targeted enforcement, such as DUI checkpoints, speed monitoring, and traffic patrols, could be implemented on these days. This may help to reduce risky driving behaviors.
+         - Launch campaigns focused on safe driving practices, particularly highlighting the dangers of reckless and impaired driving on weekends. Encouraging safe driving through social media, billboards, and radio announcements could increase awareness, especially on Sundays.
+         - Collaborate with driving schools or local authorities to offer refresher driving courses or workshops, focusing on defensive driving techniques for high-risk periods (Fridays and Sundays). This can help instill safer driving habits among frequent drivers.
+         - Areas like 'Not at junction or within 20 metres' and 'T or staggered junction' have the most frequent Sunday and Friday incident. Installing additional traffic signals, warning systems, and surveillance cameras in these locations may help in reducing accidents and quickly responding to incidents.
+
+        These recommendations aim to improve road safety through a combination of enforcement, awareness, education, and targeted interventions on high-risk days.
+
+### Analysis of Accident Frequency and Severity by Junction Control Type
+#### Overview:
+This analysis examines the relationship between junction control types and the frequency and severity of accidents. By understanding how different types of traffic control at junctions—such as traffic signals, stop signs, and uncontrolled junctions—correlate with accident rates, we can gain insights into the safety impact of various control measures. This assessment can help identify areas where additional control measures or interventions might reduce accident rates and severity.
+
+- **Goal**: The goal of this analysis is to identify high-risk junction types and guide infrastructure improvements. Enhanced safety measures, such as additional traffic signals or warning signs at uncontrolled junctions, could potentially reduce accidents and save lives. The findings will provide actionable insights for urban planners and traffic authorities, aiming to make junctions safer for all road users.
+
+- **Accident Frequency per Junction Control Type**:
+   - **SQL CODE**:
+      ```SQL
+        -- Accident Frequency per Junction Control Type
+        SELECT Junction_Control, COUNT(*) AS Total_accident
+        FROM road_accident_data
+        GROUP BY Junction_Control
+        ORDER BY 2 DESC;
 
   
 
