@@ -230,7 +230,7 @@ The EDA phase focused on examining the Road Accident dataset to identify pattern
         - Increase safety interventions like speed enforcement and roadside assistance in summer (June-August), where accidents remain relatively high.
 
 - **Analysis of Accident Frequency and Severity by Day of the Week**
-   - **SWL CODE**:
+   - **SQL CODE**:
       ```SQL
         -- Accident by Day of the Week
         SELECT 
@@ -284,6 +284,40 @@ This analysis examines the relationship between junction control types and the f
         FROM road_accident_data
         GROUP BY Junction_Control
         ORDER BY 2 DESC;
+
+    - **Output**:
+
+       ![Junction contro](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/Junction%20control.png)
+
+    - **Key Findings**:
+       - 150,045 accidents occurred at "Give Way or Uncontrolled" junctions, making it the highest among all junction control types. This suggests that junctions without active control measures may present higher risks, possibly due to increased driver discretion and variability in yielding behavior.
+       - 98,055 incidents are marked as "Data Missing or Out of Range," representing a considerable portion of the dataset. This gap in data may limit the ability to draw fully comprehensive conclusions about the effectiveness of specific junction controls and highlights the need for improved data collection methods.
+       - "Auto Traffic Signal" junctions have 32,349 accidents, considerably lower than the "Give Way or Uncontrolled" type. This difference indicates that signal-controlled intersections may contribute to safer traffic flow and reduce the likelihood of accidents by enforcing clear yielding patterns.
+       - Junctions controlled by "Stop Signs" and "Authorized Personnel" had relatively low accident counts at 1,685 and 460 respectively. These findings suggest that more direct forms of control, such as stop signs or human-directed traffic, might contribute to a decrease in accidents at junctions.
+       - There were 25,378 accidents recorded "Not at Junction or Within 20 Metres," which indicates a need to also address road sections that aren't near junctions but might still have accident risks, such as sharp bends or areas prone to congestion.
+
+    - **Recomendations**:
+       - Consider adding traffic lights or stop signs at high-traffic uncontrolled junctions. This could help reduce accident rates by minimizing driver ambiguity and encouraging more structured yielding behaviors.
+       - To reduce the "Data Missing or Out of Range" cases, traffic authorities should consider revisiting data entry methods and implementing more standardized collection protocols. Accurate data is crucial for informed decision-making and effective safety interventions.
+       - Develop public awareness campaigns around safe yielding practices, especially at uncontrolled or "Give Way" junctions. This could include educational materials, road signage reminders, or digital campaigns to encourage cautious driving in these areas.
+       - Given the lower accident rates observed at "Auto Traffic Signal" junctions, implementing similar signal controls at other busy junctions could be beneficial. Authorities could analyze high-risk areas to determine where traffic signals would be most effective.
+       - While "Stop Sign" junctions have low accident rates, ongoing assessments can ensure they remain effective. Adjusting signage visibility or road markings at these locations could enhance safety further.
+       - For the areas recorded "Not at Junction or Within 20 Metres," consider adding cautionary signs, road markings, or speed-reducing measures to address potential risks in non-junction accident-prone zones.
+
+- **Severity Distribution (Slight, Serious, Fatal) Across Junction Control**:
+   - **SQL CODE**:
+      ```SQL
+        SELECT Junction_Control, Accident_Severity, COUNT(*) AS Total_accident
+        FROM road_accident_data
+        GROUP BY Junction_Control, Accident_Severity
+        ORDER BY Junction_Control, Accident_Severity;
+
+    - **Output**:
+
+       ![JUNCTION SEVERITY](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/JUNCTION%20SEVERITY.png)
+
+    - **Key Findings**:
+       - 
 
   
 
