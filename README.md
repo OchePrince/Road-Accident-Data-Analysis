@@ -206,6 +206,57 @@ The EDA phase focused on examining the Road Accident dataset to identify pattern
         FROM road_accident_data
         GROUP BY `Year`, Months
         ORDER BY `Year`, Total_Accident DESC;
+ 
+    - **Output**:
+
+       ![yearly casualties](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/yearly%20casualties.png)
+
+    - **Key Findings**:
+       - **Peak Accident Period**:
+           - In 2021, accident numbers peaked in November with 15,473 accidents and 20,975 casualties. The lowest recorded month was February with 10,950 accidents and total casualties of 14,648.
+           - In 2022, November peaked with most accident occurrence with 13,622 accident and 18,439 casulties, while December showed the lowest 9,625 accidents and 13200 casualties.
+
+            This trend suggests a seasonal pattern where accident counts tend to rise towards the end of the year (November) and are generally lower at the beginning (January-February and December).
+        - **Yearly Comparison**:
+           - Comparing month-by-month figures between 2021 and 2022, there is an overall decline in the number of accidents in 2022. November decreased from 15,473 accidents in 2021 to 13,622 in 2022.
+           - This decrease could imply improved road safety measures, changes in traffic patterns, or variations in road conditions or weather.
+        - **Notable Mid-Year Trends**:
+           - Mid-year months like June, July, and August tend to have relatively high accident counts in both years, suggesting that these months might have specific risk factors—such as increased road travel during summer months.
+           - These months are notable for consistently high accident counts, with similar values year-over-year.
+    - **Recommendations**:
+        - Implement public awareness campaigns and increase traffic enforcement during high-accident months, particularly November and mid-year months (June to August). Since these months show consistently higher accident rates, focused safety campaigns could promote safer driving habits and reduce accident numbers during peak periods.
+        - Increase winter-specific road safety measures and vehicle maintenance advisories during the winter months (January-February and November-December). Although accident counts are generally lower in winter months, conditions such as rain, snow, or fog can still contribute to accidents. By preparing drivers with safe winter-driving practices, the risk of accidents in adverse conditions can be reduced.
+        - Analyze factors that may have contributed to the overall decline in accidents from 2021 to 2022. Possible areas for investigation include changes in traffic volume, implementation of new safety protocols, or modifications in road infrastructure. Understanding the reasons behind the reduction could help replicate successful measures across other areas or seasons, leading to a sustained decrease in accidents.
+        - Increase safety interventions like speed enforcement and roadside assistance in summer (June-August), where accidents remain relatively high.
+
+- **Analysis of Accident Frequency and Severity by Day of the Week**
+   - **SWL CODE**:
+      ```SQL
+        -- Accident by Day of the Week
+        SELECT 
+        	Day_of_week,
+            COUNT(*) AS Total_Accident,
+            SUM(Number_of_Casualties) AS Total_casualties
+        FROM road_accident_data
+        GROUP BY Day_of_week
+        ORDER BY Total_casualties DESC;
+        
+        SELECT 
+        	Day_of_week,
+            Accident_Severity,
+            COUNT(*) AS Total_Accident,
+            SUM(Number_of_Casualties) AS Total_casualties
+        FROM road_accident_data
+        GROUP BY Day_of_week, Accident_Severity
+        ORDER BY Day_of_week, Accident_Severity ;
+
+    - **Output**:
+
+       ![day_of_the_week accident](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/day_of_the_week accident.png)
+
+  
+
+
 
     
           
