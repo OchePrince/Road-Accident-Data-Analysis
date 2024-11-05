@@ -175,6 +175,25 @@ The EDA phase focused on examining the Road Accident dataset to identify pattern
         FROM road_accident_data
         GROUP BY Weather_Conditions, Light_Conditions
         ORDER BY  Weather_Conditions, Light_Conditions;
+ 
+   - **Output**:
+
+      ![weather_condition](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/weather_condition.png)
+
+  - **Key Findings**:
+     1. **Dominance of 'Fine, No High Winds' Conditions**: Most accidents occur under calm, fair weather conditions, particularly when there are no high winds. During the day, this condition accounts for 188,557 recorded accidents, and it remains high at night with 55,938 incidents. This trend suggests that when the weather is mild, road usage increases, possibly leading to a higher accident rate due to more vehicles on the road.
+     2. **Rainy Weather Conditions**: The data shows that when its raining with no high wind there is 21,603 incident during the day and 13,274 accidents at night. Same thing for snowing with no high wind, this generally implies that at low wind or no wind there is a high chance of accident occuring due to increase road usage.
+     3. **Fog or Mist Weather Conditions**: Accidents during fog or mist are relatively low compared to other weather conditions, with 763 accidents recorded during the day and a slight increase to 927 at night. This trend suggests that foggy weather likely results in drier roads with reduced traffic, potentially due to drivers being more cautious or avoiding travel under low-visibility conditions.
+
+   - **Recommendations**:
+     1. Implement increased traffic monitoring and enforcement during fair weather conditions, especially during high-traffic hours in the day and night. This could include deploying more traffic officers, setting up mobile speed cameras, or introducing electronic speed signage in busy zones.
+     2. Install enhanced fog-warning systems and reflective road markers in areas prone to fog or mist. In addition, lower speed limits and increased signage can remind drivers to exercise caution in these conditions.
+     3. Run public awareness campaigns focused on the increased risks associated with nighttime driving, particularly in calm weather. Campaigns can promote defensive driving practices and emphasize caution in familiar weather conditions.
+     4. Increase the frequency of road treatments like salting, sanding, and plowing in areas prone to snow. Additional attention to high-traffic and high-accident roads can reduce risks associated with ice and snow accumulation.
+     5. Snow and ice create slippery surfaces, which greatly increase stopping distances and the risk of skidding. Regular treatments can make roads safer and improve vehicle traction.
+     6.  Improve drainage systems on roads susceptible to water accumulation to prevent puddling and hydroplaning hazards. Regular maintenance to keep drains clear of debris is essential, especially in areas with frequent rain. Rain can cause standing water on roadways, which increases the chance of hydroplaning and loss of control. Effective drainage helps maintain dry lanes and reduces these risks.
+
+ 
           
 
 
