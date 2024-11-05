@@ -193,7 +193,21 @@ The EDA phase focused on examining the Road Accident dataset to identify pattern
      5. Snow and ice create slippery surfaces, which greatly increase stopping distances and the risk of skidding. Regular treatments can make roads safer and improve vehicle traction.
      6.  Improve drainage systems on roads susceptible to water accumulation to prevent puddling and hydroplaning hazards. Regular maintenance to keep drains clear of debris is essential, especially in areas with frequent rain. Rain can cause standing water on roadways, which increases the chance of hydroplaning and loss of control. Effective drainage helps maintain dry lanes and reduces these risks.
 
- 
+### Total Accident and Casualties in a Year
+- **Goal**: To understand patterns and trends of road accident accross diffrent months and day of the week and also the time when most accident occur and the number of casualties.
+- **Number of Accident in a Year and Month and Total Casualties**
+   - **SQL CODE**:
+      ```SQL
+        SELECT 
+            `Year`,
+            Months,
+            COUNT(*) AS Total_Accident,
+            SUM(Number_of_Casualties) AS Total_casualties
+        FROM road_accident_data
+        GROUP BY `Year`, Months
+        ORDER BY `Year`, Total_Accident DESC;
+
+    
           
 
 
