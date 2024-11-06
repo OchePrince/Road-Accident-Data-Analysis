@@ -317,7 +317,20 @@ This analysis examines the relationship between junction control types and the f
        ![JUNCTION SEVERITY](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/JUNCTION%20SEVERITY.png)
 
     - **Key Findings**:
-       - 
+       - This category has a high number of fatal (1,916) and serious (15,012) accidents. The lack of precise junction control data here might indicate that certain junctions or road sections with missing control data have elevated risks. This gap in recorded data could also suggest unaccounted or uncontrolled junctions in the system that need attention.
+       - Fatal accidents (1,223) and serious accidents (18,237) are notably high in "Give Way or Uncontrolled" junctions. Slight accidents are even more frequent (130,585). This indicates that “Give Way” junctions could pose a higher risk, likely due to the lack of clear yielding instructions, leading to driver uncertainty and more severe accidents.
+       - Authorized personnel-controlled areas have very low counts of fatal accidents (2) and serious accidents (42). This low rate implies that direct human control, such as police or traffic wardens, contributes to effective management, particularly in high-risk or temporary traffic conditions.
+       - With fatal accidents at 302 and serious at 3,284, "Auto Traffic Signal" junctions show a much lower accident severity compared to uncontrolled junctions. This suggests that signalized intersections are more effective at managing traffic flow and reducing accident severity.
+       - There are notable accident numbers at locations "Not at Junction or Within 20 Metres," with fatal accidents at 499 and serious accidents at 3,990. This highlights that road sections just outside junctions may have specific hazards, perhaps due to speeding or sudden changes in traffic conditions near intersections.
+       - Fatal accidents (11) and serious accidents (175) at "Stop Sign" junctions are among the lowest in severity, indicating the effectiveness of stop signs in managing traffic safety at low-volume junctions.
+
+    - **Recommendations**:
+       - Given the high fatality rates in the "Data Missing or Out of Range" category, focus on improving data recording practices and ensuring all junction types are accounted for. This could reveal unmonitored areas that may benefit from safety interventions.
+       - Uncontrolled junctions with high fatality and injury counts may benefit from additional control measures, such as upgrading to traffic signals or adding warning signs. These changes can help reduce the accident severity by providing clearer yielding instructions.
+       - Stop sign intersections, despite low severity, could still benefit from improved visibility (such as adding rumble strips) to maintain their safety effectiveness, especially at night or during adverse weather conditions.
+       - To address accidents that occur "Not at Junction or Within 20 Metres," implement speed-reducing measures like speed bumps or cautionary signage near these areas. This can help manage the transition into and out of junction areas safely.
+       - Auto traffic signals show a reduced severity in accidents. Expanding their use at selected high-risk uncontrolled junctions may be effective in improving overall road safety.
+       - Run campaigns to educate drivers on the importance of yielding at “Give Way” junctions and obeying traffic signals. Improved driver awareness can help reduce accident frequency and severity at uncontrolled junctions.
 
   
 
