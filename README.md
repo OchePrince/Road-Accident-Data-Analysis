@@ -331,6 +331,14 @@ This analysis examines the relationship between junction control types and the f
        - To address accidents that occur "Not at Junction or Within 20 Metres," implement speed-reducing measures like speed bumps or cautionary signage near these areas. This can help manage the transition into and out of junction areas safely.
        - Auto traffic signals show a reduced severity in accidents. Expanding their use at selected high-risk uncontrolled junctions may be effective in improving overall road safety.
        - Run campaigns to educate drivers on the importance of yielding at “Give Way” junctions and obeying traffic signals. Improved driver awareness can help reduce accident frequency and severity at uncontrolled junctions.
+     
+
+
+### Analysis of Accident Frequency and Severity by Location
+- **Goal**:
+   
+
+
 
   
 
