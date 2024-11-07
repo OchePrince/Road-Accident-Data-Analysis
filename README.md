@@ -387,7 +387,9 @@ This analysis will explore how various vehicle types, speed limit, road characte
 
 - **Summary of Casulties by Vehicle Types**:
 
-  This analysis was done on Excel and the vehicle types where aggregated into; Agricultural vehicle, Cars, Bus, Van, Bike and Others. This was done by using formula to calculate the items and add same fields together
+  This analysis was done on Excel and the vehicle types where aggregated into; Agricultural vehicle, Cars, Bus, Van, Bike and Others. This was done by using formula to calculate the items and add same fields together.
+
+  ![Number of casualty](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/Number%20of%20casualty.png)
 
   
 
