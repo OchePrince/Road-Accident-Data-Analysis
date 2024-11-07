@@ -362,6 +362,36 @@ This analysis examines the relationship between junction control types and the f
     GROUP BY Road_Type, Urban_or_Rural_Area
     ORDER BY Road_Type, Urban_or_Rural_Area;
 
+- **Output**:
+
+  ![Urban roadtype](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/Urban%20roadtype.png)
+
+- **Key Findings**:
+   - Single carriageways account for the highest number of accidents in both rural (76,672) and urban (153,939) areas. Urban single carriageways see almost double the accident frequency of their rural counterparts, which may be attributed to higher traffic volume, pedestrian activity, and intersections in urban settings.
+   - Dual carriageways have a more balanced accident count between rural (22,333) and urban (23,134) areas. This could indicate that dual carriageways maintain consistent risk levels across both types of environments, possibly due to their design, which often includes central barriers to separate traffic.
+   - Roundabouts in urban areas have almost twice the number of accidents (13,504) compared to rural areas (7,425). This may be due to greater congestion and complex traffic flow patterns in urban roundabouts, making them more prone to collisions, especially during peak hours.
+   - One-way streets show significantly more accidents in urban areas, with one-way streets at 5,698 (urban) versus 499 (rural). This type of roads, typically more common in urban infrastructure, may see more accidents due to higher traffic density and more frequent lane merging or directional changes.
+   - Slip roads show a higher count of accident in the Rural area than in the urban area with 2014 incidents, while 1220 incidents in urban area. This indicate that the slip roads in the rural area are very bad than the urban area.
+   - "NA" entries in both rural (497) and urban (1,037) areas are low, indicating that unspecified road types are not as prevalent in the data or have minimal accident occurrences.
+
+- **Recommendations**:
+   - Given the high accident rates on single carriageways, especially in urban areas, consider implementing additional traffic-calming measures such as speed bumps, clear lane markings, and improved pedestrian crossings. These measures can help mitigate risks associated with high-traffic single carriageway roads. In rural areas, accidents on single carriageways may stem from high speeds and limited visibility. Adding clear signage, reflective road markers, and additional lighting, particularly at curves or junctions, would improve safety. Routine maintenance to address issues like potholes and lane encroachment is essential.
+   - Urban roundabouts experience high accident rates, possibly due to congestion and complex traffic flows. Consider installing clearer signage, advanced traffic lights during peak hours, and speed reduction measures to manage traffic more effectively. In rural roundabouts, enhancing visibility with additional lighting and clear directional signage can reduce the chances of accidents. Public awareness campaigns on navigating roundabouts safely, especially in low-light or foggy conditions, would be beneficial.
+   - For dual carriageways, which exhibit similar accident patterns across both environments, maintaining high-quality lane markings, median barriers, and regular road inspections are crucial. Speed monitoring measures, especially in rural areas where drivers might be inclined to speed, can help in maintaining safe driving conditions.
+   - Slip roads, more common in urban settings, would benefit from clearly marked merge zones, extended slip lanes, and yield signs. Enhancing lighting and adding speed limits on entry points can help reduce accidents from sudden lane merging. For rural slip roads, where visibility may be limited, reflective markers and warning signs could alert drivers in advance.
+
+
+### Analysis on the Relationship between Vehicle Types and Road Characteristics on Accident Frequency
+#### Overview
+This analysis will explore how various vehicle types, speed limit, road characteristics, and carriageway hazards contribute to accident frequency and severity. By examining the intersection of these factors, the goal is to pinpoint specific combinations of vehicle types and road conditions that show a higher propensity for accidents.
+
+- **Summary of Casulties by Vehicle Types**:
+
+  This analysis was done on Excel and the vehicle types where aggregated into; Agricultural vehicle, Cars, Bus, Van, Bike and Others. This was done by using formula to calculate the items and add same fields together
+
+  
+
+
 
    
 
