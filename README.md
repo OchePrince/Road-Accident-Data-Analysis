@@ -385,11 +385,14 @@ This analysis examines the relationship between junction control types and the f
 #### Overview
 This analysis will explore how various vehicle types, speed limit, road characteristics, and carriageway hazards contribute to accident frequency and severity. By examining the intersection of these factors, the goal is to pinpoint specific combinations of vehicle types and road conditions that show a higher propensity for accidents.
 
-- **Summary of Casulties by Vehicle Types**:
-
-  This analysis was done on Excel and the vehicle types where aggregated into; Agricultural vehicle, Cars, Bus, Van, Bike and Others. This was done by using formula to calculate the items and add same fields together.
-
-  ![Number of casualty](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/Number%20of%20casualty.png)
+- **Summary of Accident frequency and Casulties by Vehicle Types**:
+- **SQL CODE**:
+   ```SQL
+    SELECT Vehicle_Type, COUNT(*) AS Total_Accident, SUM(Number_of_Casualties) AS Total_Casualties
+    FROM road_accident_data
+    GROUP BY Vehicle_Type
+    ORDER BY Total_Accident DESC;
+   
 
   
 
