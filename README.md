@@ -392,6 +392,33 @@ This analysis will explore how various vehicle types, speed limit, road characte
     FROM road_accident_data
     GROUP BY Vehicle_Type
     ORDER BY Total_Accident DESC;
+
+- **Output**:
+
+   ![Vehicle type casualties](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/Vehicle%20type%20casualties.png)
+
+- **Key Findings**:
+   - Cars account for the largest number of accidents, with 239,793 incidents and 325,921 casualties, indicating that cars are the most frequently involved vehicle type in accidents. This might be due to their high numbers on the road or greater exposure in various traffic conditions.
+   - Vans and light goods vehicles (under 3.5 tonnes) have significant accident counts, with over 15,000 incidents and more than 21,000 casualties. Heavy goods vehicles (both over 3.5 and 7.5 tonnes) also show a notable presence in accident data, especially in rural areas where these vehicles often operate. This indicates that goods vehicles are a critical factor in accident data and may require specialized safety measures.
+   -  Motorcycles of different engine capacities collectively contribute to a high count of accidents and casualties, with larger motorcycles (over 500cc) especially showing a high casualty count. This may be attributed to the lack of physical protection on motorcycles and their vulnerability to road hazards, indicating a need for targeted safety interventions for motorcyclists, particularly on high-speed and challenging road types.
+   -  With 8,686 incidents and 11,710 casualties, buses and coaches also form a notable part of the accident data, possibly due to their frequent stops, large size, and interactions with urban road traffic. Enhanced awareness for both bus drivers and surrounding vehicles could help reduce accident occurrences involving these vehicles.
+   -  Agricultural vehicles and pedal cycles have lower accident rates, with relatively minor casualty counts. This may reflect their limited exposure on major roads or possibly better adherence to specialized road usage areas.
+
+- **Recommendations**:
+   - Implement targeted safety programs for high-risk vehicles, especially cars and motorcycles, emphasizing defensive driving techniques and hazard awareness, particularly on high-traffic urban roads and rural areas.
+   - Considering the high accident rates for motorcycles, promote high-visibility gear and protective barriers on high-speed roads, and increase public awareness about sharing the road safely with motorcyclists. Also enforce law that all motocyclist should always wear an helmet when riding on the road to reduce more fatal and serious accident.
+   - Given the high frequency of accidents involving vans and goods vehicles, enforce stricter safety checks and driver training programs for commercial drivers, particularly on rural and suburban roads where such vehicles are commonly involved in severe accidents.
+   - For agricultural vehicles and other less frequent road users like pedal cycles, consider clearer signage indicating the presence of these vehicles on rural roads, and provide guidance to regular motorists on safely navigating around them.
+
+- **Summary of Accident frequency by Carriageway Hazard**:
+- **SQL CODE**:
+ ```SQL
+    SELECT  Carriageway_Hazards, COUNT(*) AS Total_accident
+    FROM road_accident_data
+    GROUP BY Carriageway_Hazards
+    ORDER BY 2 DESC;
+
+
    
 
   
