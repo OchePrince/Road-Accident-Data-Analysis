@@ -412,11 +412,34 @@ This analysis will explore how various vehicle types, speed limit, road characte
 
 - **Summary of Accident frequency by Carriageway Hazard**:
 - **SQL CODE**:
- ```SQL
+  ```SQL
     SELECT  Carriageway_Hazards, COUNT(*) AS Total_accident
     FROM road_accident_data
     GROUP BY Carriageway_Hazards
     ORDER BY 2 DESC;
+
+- **Output**:
+
+  ![Carriageway Hazard](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/Carriageway%20Hazard.png)
+
+- **Key Findings**:
+   - The vast majority of accidents (302,545) occurred under conditions where no specific carriageway hazard was identified. This high figure suggests that typical road conditions alone are a primary factor in accident occurrence, emphasizing the need for general road safety measures, even in the absence of additional hazards.
+   - With 2,243 incidents attributed to “Other objects on road,” these situations appear to pose notable risks. This could include debris, obstacles, or temporary obstructions that unexpectedly enter the carriageway. It highlights the need for timely removal of such hazards to improve safety.
+   - Accidents involving animals (1,620) on the carriageway are also substantial. This may occur more frequently in rural areas where wildlife or livestock can cross the road, suggesting that improved signage or barriers could help alert drivers to animal crossing zones.
+   - There were 715 recorded incidents where an uninjured pedestrian was in the carriageway, indicating a possible risk associated with people walking along or near roads. Increased awareness and safer pedestrian pathways in high-traffic or roadside areas could mitigate such incidents.
+   - A total of 511 accidents were associated with previous accident sites, likely due to factors such as slowed or congested traffic around the site, debris, or distracted drivers. This insight underscores the need for effective accident management protocols and possibly rerouting traffic promptly to reduce secondary accidents.
+   - Accidents involving vehicle loads falling onto the road are fewer (335) but pose significant risks, especially at higher speeds. Enforcing stricter load-securing regulations for transport vehicles could reduce these incidents.
+ 
+- **Recommendations**:
+   - Given the high number of accidents with no direct hazards, consistent road maintenance, debris clearance, and regular inspections are crucial to reduce accident risks in standard driving conditions.
+   - Implement more visible animal-crossing signage and explore physical barriers or underpasses in areas with frequent animal-related accidents. This can help reduce collision risks with animals on rural roads.
+   - For accidents occurring near previous accident sites, prioritize quick and thorough scene management and consider setting up temporary warning signs for approaching traffic to prevent secondary incidents.
+   - Strengthen regulations on load securing for transport vehicles to minimize incidents where loads fall onto the road, especially on highways.
+---
+
+## Data Visualization
+
+
 
 
    
