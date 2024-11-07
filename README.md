@@ -438,6 +438,9 @@ This analysis will explore how various vehicle types, speed limit, road characte
 ---
 
 ## Data Visualization
+The dashboard was designed using Excel displaying some key insights for visualisation which alows user to filter by **Time** and and **Location(Urban and Rural)**. Below is the dashboard!!
+
+![Road accident dashboard](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/Road%20accident%20dashboard.png)
 
 
 
