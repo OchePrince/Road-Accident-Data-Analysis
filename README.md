@@ -344,6 +344,25 @@ This analysis examines the relationship between junction control types and the f
     ORDER BY 2 DESC;
 
 - **Output**:
+
+   ![Urban and rural](https://github.com/OchePrince/Road-Accident-Data-Analysis/blob/main/images/Urban%20and%20rural.png)
+
+- **Key Findings**:
+  - The Urban area has the highest count of accident with 198532 incident and 255864 casualties.
+  - Rural area have a count of 109440 incidents and 162018 casualties.
+
+- **Insights and Recommendations for Accident Frequency by Road Type and Area (Urban vs. Rural)**
+- **SQL CODE**:
+   ```SQL
+    SELECT 
+    	Road_Type,
+        Urban_or_Rural_Area,
+        COUNT(*) AS Total_accident
+    FROM road_accident_data
+    GROUP BY Road_Type, Urban_or_Rural_Area
+    ORDER BY Road_Type, Urban_or_Rural_Area;
+
+
    
 
 
