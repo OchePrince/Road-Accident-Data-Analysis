@@ -334,8 +334,16 @@ This analysis examines the relationship between junction control types and the f
      
 
 
-### Analysis of Accident Frequency and Severity by Location
-- **Goal**:
+### Analysis of Accident Frequency and Severity by Urban and Rural Area
+- **Goal**: To know which area has more record of accident incidents and find data-driven solution
+- **SQL CODE**:
+   ```SQL
+    SELECT Urban_or_Rural_Area, COUNT(*) AS Total_accident, SUM(Number_of_Casualties) AS Total_casualties
+    FROM road_accident_data
+    GROUP BY Urban_or_Rural_Area
+    ORDER BY 2 DESC;
+
+- **Output**:
    
 
 
