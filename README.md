@@ -12,25 +12,27 @@ The findings from this project will not only contribute to a better understandin
 ## Data Overview
 - **Data Source**: This Data was gotten from *Kaggle*
 - **Descripton**: This data set contains **307,973** rows and 24 columns which include;
-    1. Accident_index
-    2. Accident_Date
-    3. Day_of_week 
-    4. Months
-    5. Year
-    6. Accident_Severity
-    7. Light_Conditions
-    8. Local_Conditions
-    9. Local_Authority_(District)
-    10. Carriageway_Hazards
-    11. Number_of_Casualties
-    12. Police_Force
-    13. Road_Surface_Conditions
-    14. Road_Type
-    15. Speed_limit
-    16. Time
-    17. Urban_or_Rural_Area
-    18. Weather_Conditions
-    19. Vehicle_Type
+  - Accident_index
+  - Accident_Date
+  - Day_of_week
+  - Months
+  - Year
+  - Accident_Severity
+  - Light_Conditions
+  - Local_Conditions
+  - Local_Authority_(District)
+  - Carriageway_Hazards
+  - Number_of_Casualties
+  - Police_Force
+  - Road_Surface_Conditions
+  - Road_Type
+  - Speed_limit
+  - Time
+  - Urban_or_Rural_Area
+  - Weather_Conditions
+  - Vehicle_Type
+    
+  
 ---
 
 ## Objectives
