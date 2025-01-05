@@ -129,7 +129,7 @@ The EDA phase focused on examining the Road Accident dataset to identify pattern
 
 - **Key Findings**:
     1. **Severity Distribution**: Slight accidents make up the majority of cases, followed by serious and fatal accidents.
-    2. **Light Conditions**: The data shows that majority of accident occur during the day than night, this could be, because during the day the road is always busya and less busy at night.
+    2. **Light Conditions**: The data shows that majority of accident occur during the day than night, this could be, because during the day the road is always busy and less busy at night.
 
 ### Bivariate Analysis
 **Goal**: To examine relationships between pairs of variables.
